@@ -1,4 +1,9 @@
-const fs = require("fs");
+// getting the package from npm
+const superheroes = require("superheroes");
+const supervillains = require('supervillains');
 
-fs.copyFileSync("file1.txt", "file.txt");
+// calling a func from the given package we installed
+ var mySuperhero = superheroes.random();
+ var mySupervillain = supervillains.random();
 
+ console.log(mySuperhero + "  " +  mySupervillain);
