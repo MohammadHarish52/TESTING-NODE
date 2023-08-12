@@ -1,1 +1,4 @@
-console.log("hii beech");
+const fs = require("fs");
+
+fs.copyFileSync("file1.txt", "file.txt");
+
